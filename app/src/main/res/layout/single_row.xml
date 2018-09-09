@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="100dp"
+     android:orientation="vertical">
+
+     <TextView
+         android:id="@+id/itemBox"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Box ref"
+         android:textColor="@color/colorPrimary"
+         android:textSize="17dp"
+         android:layout_alignParentTop="true"
+         android:layout_marginBottom="8dp"
+         android:layout_centerHorizontal="true" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@drawable/round">
+
+    <Button
+        android:id="@+id/minus"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/roundedbutton"
+        android:textColor="@color/colorGrayBackgroung"
+        android:textSize="30dp"
+        android:text="-" />
+
+    <RelativeLayout
+        android:layout_width="74dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/minus"
+        android:layout_toRightOf="@+id/minus"
+        android:layout_toLeftOf="@+id/plus"
+        android:orientation="vertical"
+        android:id="@+id/layout">
+
+        <TextView
+            android:id="@+id/itemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="# of peaces"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true" />
+
+        <Text
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/plus"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/roundedbutton"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
+        android:textColor="@color/colorGrayBackgroung"
+        android:textSize="30dp"
+        android:text="+" />
+
+    <ImageButton
+        android:id="@+id/update"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/flesh" />
+
+</RelativeLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
