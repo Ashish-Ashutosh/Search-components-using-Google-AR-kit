@@ -1,2 +1,2 @@
 # Search-components-using-Google-AR-kit
-to create an application to search for components in a lab using Google AR Kit.
+- to create an application that searches for components in a lab using Google AR Kit.
